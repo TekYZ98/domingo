@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador_JR</title>
+    <link rel="website icon" type="png" href="img/icono P.png">
+</head>
+<body>
+    <button id="button1" popovertarget="mostrar">
+        <span id="span1">MOSTRAR</span>
+    </button>
+
+
+    <div id="mostrar" popover>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWHYkyVJODM0NJ0aZTTNzuaL1Qil25_AjRu2V4x2Uow&s" class="img">
+    </div>
+<br><br><br><br><br><br>
+
+<button id="button">Botón Neon</button>
+
+
+
+    <style>
+        body{
+            background-color: #111;
+        }
+        #button1{
+            border: 0;
+            background-image: linear-gradient(
+                150deg,
+                #ff00ff,
+                #7fffd4,
+                #9acd32
+            );
+            border-radius: 8px;
+            color: #ffffff;
+            display: flex;
+            font-size: 18px;
+            padding: 4px;
+            cursor: pointer;
+            transition: 2s;
+            font: inherit;
+        }
+
+        #button1 #span1{
+            background-color: #696969;
+            padding: 16px 24px;
+            border-radius: 6px;
+            transition: 2s;
+        }
+
+        #button1:hover #span1{
+            background: none;
+        }
+
+        #button1:active{
+            transform: scale(0.9);
+        }
+
+        .img{
+            display: block;
+            width: 300px;
+        }
+
+        [popover]::backdrop{
+            background-color: rgb(0 0 0 / .8);
+        }
+
+        [popover]{
+            padding: 2rem;
+        }
+
+        #button{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            background-color: #ff0;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(235, 255, 0, 0.8);
+            transition: box-shadow 0.4s ease;
+        }
+
+        #button:hover{
+            box-shadow: 0 0 10px rgba(235, 255, 0, 0.8);
+        }
+
+    </style>
+
+</body>
+</html>
